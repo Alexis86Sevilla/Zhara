@@ -1,0 +1,40 @@
+<div *ngIf="productos" id="contenedor">
+
+    <div id="imagenPrincipal"><img [src]="productos.getImg()" alt="Producto"></div>
+
+
+    <div id="infoProductos">
+        <h2>{{productos.getTitulo() | titlecase}}</h2>
+        <div id="cantidades">
+            <h3 [ngClass]="productos.getOferta() === 0 ? '' : 'precios descuento'">{{ productos.getPrecio()
+                |
+                currency:'EUR':'symbol'}}</h3>
+            <h3 class="precios" *ngIf="productos.getOferta() > 0">&nbsp; {{
+                calcularDescuento(productos.getPrecio(),
+                productos.getOferta()) |
+                currency:'EUR':'symbol'}}</h3>
+        </div>
+
+        
+            <p>Color</p><img [src]="productos.getImg()" alt="Producto">
+       
+        <p>Tallas disponibles</p>
+        <div id="tallas">
+
+            <p><span [ngClass]="productos.getOferta() ? '' : 'agotado'">S</span> <span
+                    [ngClass]="productos.getOferta() ? '' : 'agotado'">M</span> <span
+                    [ngClass]="productos.getOferta() ? '' : 'agotado'">L</span>
+                <span [ngClass]="productos.getOferta() ? '' : 'agotado'">XL</span> <span
+                    [ngClass]="productos.getOferta() ? '' : 'agotado'">XXL</span> <span
+                    [ngClass]="productos.getOferta() ? '' : 'agotado'">X2L</span>
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</div>

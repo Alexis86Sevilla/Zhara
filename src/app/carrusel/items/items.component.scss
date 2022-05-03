@@ -1,0 +1,24 @@
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-caption{
+  #info{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 65% !important;
+    height: 120px;
+    background: rgba(184, 184, 184, 0.278);
+    margin: auto;
+
+    p{
+      font-size: 25px;
+    }
+  }
+}

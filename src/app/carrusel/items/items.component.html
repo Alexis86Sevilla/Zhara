@@ -1,0 +1,9 @@
+<div *ngFor="let img of imagenes; let i=index" [ngClass]="(i === 0) ? 'active' : ''" class="carousel-item">
+    <img [src]="img.getImg()" class="d-block w-100">
+    <div class="carousel-caption d-none d-md-block">
+        <div id="info">
+            <h3>{{img.getTitulo()}}</h3>
+            <p>{{img.getSubtitulo()}}</p>
+        </div>
+    </div>
+</div>

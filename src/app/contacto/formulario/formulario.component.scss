@@ -1,0 +1,26 @@
+#contacto {
+  margin: auto;
+  width: 50%;
+
+  legend {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  hr {
+    height: 5px;
+    background: linear-gradient(90deg, rgb(14, 32, 217) 0%, rgb(181, 0, 255) 20%, rgb(255, 0, 94) 46%, rgb(29, 253, 32) 65%, rgb(249, 133, 0) 83%, rgb(232, 255, 0) 100%);
+  }
+
+  .btn {
+    color: white;
+    background-color: #252525;
+    width: 100%;
+    transition: all 600ms;
+  }
+  
+  .btn:hover{
+      color: black;
+      background-color: antiquewhite;
+  }
+}

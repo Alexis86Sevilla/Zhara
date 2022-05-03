@@ -1,0 +1,86 @@
+#contenedor {
+  display: flex;
+  justify-content: center;
+
+  #imagenPrincipal {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 5%;
+
+    img {
+      width: 45%;
+
+    }
+  }
+
+  #cantidades {
+    display: flex;
+
+    .descuento {
+      color: red;
+      text-decoration: line-through;
+    }
+  }
+
+  #infoProductos {
+    display: flex;
+    flex-direction: column;
+
+    h2,
+    h3,
+    img {
+      padding-bottom: 2%;
+    }
+
+    img {
+      width: 15%;
+    }
+
+
+
+    #tallas {
+      width: 22%;
+
+      span {
+        display: inline-block;
+        background-color: #f5f5f5;
+        text-align: center;
+        line-height: 40px;
+        margin: 1%;
+        width: 40px;
+        height: 40px;
+      }
+
+      .agotado {
+        display: inline-block;
+        color: rgb(66, 66, 66);
+        text-decoration: line-through;
+        background-color: #cfcfcf;
+        text-align: center;
+        line-height: 40px;
+        margin: 1%;
+        width: 40px;
+        height: 40px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 1340px) {
+  #contenedor {
+    flex-direction: column;
+
+    #imagenPrincipal{
+      justify-content: center;
+      img{
+        border: 1px solid black;
+      }
+    }
+
+    #infoProductos{
+      align-items: center;
+    }
+  }
+}

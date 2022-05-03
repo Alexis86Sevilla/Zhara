@@ -1,0 +1,16 @@
+h2{
+    margin-top: 5%;
+}
+
+.map-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 30%;
+    position: relative;
+  }
+  
+  .map-container iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }

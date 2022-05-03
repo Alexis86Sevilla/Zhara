@@ -1,0 +1,27 @@
+.card {
+  border: none;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-img-top {
+  height: 20vw;
+  object-fit: cover;
+}
+
+.precios {
+  font-size: 1.5rem;
+}
+
+.descuento {
+  color: red;
+  text-decoration: line-through;
+}
+
+.cantidades {
+  display: flex;
+  justify-content: center;
+}

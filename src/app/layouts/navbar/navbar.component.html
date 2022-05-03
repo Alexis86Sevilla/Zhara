@@ -1,0 +1,32 @@
+<header id="cabecera">
+    <div id="barraLogo" class="navbar py-3">
+        <div class="container justify-content-center mt-1 text-center">
+            <p>¡Descuentos hasta del <span class="anuncio">{{descuento}}%</span>!. Esta {{estacion}} <span class="anuncio">envios
+                    gratis</span> por compras de más de 10€</p>
+        </div>
+    </div>
+
+    <nav id="menu" class="navbar navbar-expand-lg navbar-light ">
+        <div class="container d-flex">
+            <p id="titulo">{{titulo | uppercase}}</p>
+            <a class="navbar-brand mx-auto" [routerLink]="['']">
+                <img src="../../../assets/img/logoZhara.png" alt="logo" id="logo" class="d-inline-block">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="me-auto"></div>
+                <div class="navbar-nav">
+                    <a [routerLink]="['']" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}"
+                        class="nav-link">Inicio</a>
+                    <a [routerLink]="['nosotros']" [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact:true}" class="nav-link">Nosotros</a>
+                    <a [routerLink]="['contacto']" [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact:true}" class="nav-link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

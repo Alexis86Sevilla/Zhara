@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="row g-3 overflow-hidden mt-5">
+
+        <div *ngFor="let img of imagenes" class="card tarjeta col-md-4 col-sm-4 ml-auto ">
+            <img [src]="img.getImg()" class="card-img-top" alt="Secciones">
+            <div id="text">
+                <p>{{img.getTitulo()}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<h1 class="text-center mt-3">{{categoria}}</h1>
+<div class="container-fluid">
+    <div class="row">
+        <app-tarjetas-productos *ngFor="let producto of productos" [producto]="producto" (click)="irAProducto($event)"
+            class="col-lg-3 col-md-12 text-center mt-5"></app-tarjetas-productos>
+    </div>
+</div>

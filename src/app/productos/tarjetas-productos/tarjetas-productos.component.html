@@ -1,0 +1,15 @@
+<div *ngIf="producto" class="tarjeta">
+    <img (click)="enviarID()" class="card-img-top" [src]="producto.getImg()" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-title">{{producto.getTitulo() | titlecase}}</p>
+        <div class="cantidades">
+            <p [ngClass]="producto.getOferta() === 0 ? 'precios' : 'precios descuento'">{{ producto.getPrecio()
+                |
+                currency:'EUR':'symbol'}}</p>
+            <p class="precios" *ngIf="producto.getOferta() > 0">&nbsp; {{
+                calcularDescuento(producto.getPrecio(),
+                producto.getOferta()) |
+                currency:'EUR':'symbol'}}</p>
+        </div>
+    </div>
+</div>
